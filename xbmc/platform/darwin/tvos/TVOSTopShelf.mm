@@ -130,9 +130,7 @@ void CTVOSTopShelf::SetTopShelfItems(CFileItemList& movies, CFileItemList& tv)
             return videoItem->GetArt("poster");
         }
         else
-        {
             return videoItem->GetArt("thumb");
-        }
          },
                     [](CFileItemPtr videoItem) { return videoItem->GetLabel(); });
 
